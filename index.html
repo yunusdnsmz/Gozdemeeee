@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Gözdem sana özel 💖</title>
+  <style>
+    body {
+      background: pink;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: red;
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1> Merhabalar dünyanın ve kainatın en güzel kadını 💌</h1>
+  <p>Bu siteyi senin için yaptım elimden geldiğince 🤭.</p>
+</body> <h2>Sürprizi görmek istiyorsannn sevgili olduğumuz tarihi bir deneye bilirsin 😉😽:</h2>
+<input type="password" id="pw">
+<button onclick="check()">Giriş</button>
+<p id="err" style="color:red"></p>
+
+<div id="icerik" style="display:none;">
+  <h2>🎉🎉İşte sürprizzzzzzzzz! 🎉🎉</h2>
+  <p>Elimden geldiğince kendi başıma birşeyler yapmaya çalıştım hayatım tamamen bitti evet belki çok iyi çok güzel olmamış ola bilir ama elimden anca bu kadar geldi
+ama ben senin zaten bununlada mutlu olucağını biliyorum seni çok seviyorum güzelim ne olursa olsun senden asla vaz geçmiyicem seni sevmeyi asla bırakmıyıcam ömrümün sonuna kadar seni sevicem
+seninle bereber mutlu huzurlu güzel bir yuva kurmak istiyorum hayatımı seninle berber ilerletmek istiyorum hep paragraf hep paragraf olmuyor birazda böyle özenli bir paragraf olsun dimii
+ilk defa yaptım sürekli test ettim umarım bir sorun sıkıntıda çıkmaz o güzel gözlerinin ışıltısı o güzel yüzündeki tebessüm için her şeyi yaparım yanında olmak nefesini kokunu hissetmek 
+teninin sıcaklığını hissetmek çok güzek gekliyor nasıl bir dua nasıl bir iyilik yaptığımı hep düşüyorum karşıma sen çıktın bana değer verdin beni sevdin bana güvendin yargılamadın dinledin 
+kararlarıma saygı gösterdin sürekli bana destek olmaya çalışıyorsun ama ne olursa olsun her zaman senin yanında olucam seni sevmeyi asla bırakmıyıcam sevgilimm ❤️❤️❤️❤️❤️</p>
+</div>
+
+<script>
+  const SIFRE = "030525"; // 
+  function check(){
+    const girilen = document.getElementById("pw").value;
+    if(girilen === SIFRE){
+      document.getElementById("icerik").style.display = "block";
+    } else {
+      document.getElementById("err").textContent = "Yanlış şifre!";
+    }
+  }
+</script> 
+</html> 
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Senin İçin 💖</title>
+  <style>
+    body {
+      background: pink;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+    #slider-container {
+      position: relative;
+      display: inline-block;
+    }
+    img {
+      width: 350px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      transition: opacity 1s ease-in-out;
+    }
+    #caption {
+      margin-top: 15px;
+      font-size: 1.3em;
+      color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bizim Anılarımız 💞</h1>
+
+  <div id="slider-container">
+    <img id="slider" src="" alt="Fotoğraf">
+    <p id="caption"></p>
+  </div>
+  
+  <script>
+    // 📌 BURAYA FOTOĞRAFLARINI VE YAZILARINI EKLE
+    // ÖRNEK: ["fotoğraf_linki", "altındaki yazı"]
+    const anilar = [
+      ["IMG_1041.JPEG", "Seninle ilk buluşmamız (BASTON HARİÇ) 03/05/2025 💖"],
+      ["CANIM.JPEG", "İlk çiçek alıp getirdiğim zaman 09/05/2025 🌸"],
+      ["IMG_1733.JPEG", "Ah ahh beni öpüşlerinnnn 11/05/25 😍"],
+      ["IMG_1976.JPEG", "Yeşil gözlü çoçuğummm 17/05/25 🤭💞"],
+      ["IMG_2367.JPEG", "EEEEE konserede gittik 19/05/25 ❤️‍🔥❤️‍🔥"],
+      ["KARICIMM.JPEG", "KARIMINN DOĞUM GÜNÜÜÜÜÜÜ 30/05/2025 ❤️‍🩹"],
+      ["IMG_3466.JPEG", "Ne kadarda tatlışızzzzzz 05/06/2025 🤍"],
+      ["IMG_3931.JPEG", "TRABONSPORLU OLDU KARIM VE GÜZEL BİR GÜN 13/06/2025 🤭💋💙❤️‍🔥"],
+      ["IMG_4756.JPEG", "Aslanın eşide aslandırr 19/07/2025 🦁🦁"],
+      ["IMG_5469.JPEG", "Bu nasıl bir güzelliktir peki aşkım yaaa 26/06/25 🍯"],
+      ["ANAMM.JPEG", "Sürek baktığım fotolardan bir tanesii  01/07/25 😻"],
+      ["IMG_6257.JPEG", "Şirinim minigim canım karımmm 05/07/25 😋"],
+      ["IMG_9292.JPEG", "1 AY ÜSTÜNE 09/08/25 🥹"],
+      ["IMG_9718.JPEG", "Baldızımla ve bacanakla tanıştım 15/08/25 😂😂"],
+      ["IMG_9947.JPEG", "Aynı giyinmiştikkk hehehe 17/08/25 😇"],
+      ["konser2.JPEG", "2.Konserimizzzzz 31/08/25 🥳🥳"],
+      ["IMG_9955.JPEG", "Gözlerrrr😍"],
+      ["güzelim.JPEG", "Diyilicek bir söz söylene bilicek laf kalmadı 💝"],
+      ["bebek.JPEG", "ALLAHIIIIIMMMMM 💗"],
+      ["gözlerr.JPEG", "sabahlara kadar çok baktım hala bakıyorum o güzel gözlerine 😍"],
+
+    ];
+    // 📌 Kendi fotoğraflarını eklerken
+    // 1. Fotoğrafı index.html dosyasıyla aynı klasöre koy (ör: askim1.jpg)
+    // 2. Yukarıdaki gibi ekle: ["askim1.jpg", "Buraya romantik yazı"]
+
+    let index = 0;
+    const img = document.getElementById("slider");
+    const caption = document.getElementById("caption");
+
+    function goster(){
+      img.style.opacity = 0;
+      caption.style.opacity = 0;
+      setTimeout(() => {
+        img.src = anilar[index][0];
+        caption.textContent = anilar[index][1];
+        img.style.opacity = 1;
+        caption.style.opacity = 1;
+      }, 1000);
+      index = (index + 1) % anilar.length;
+    }
+
+    // İlk fotoğrafı hemen göster
+    goster();
+    // Sonrakiler her 3 saniyede bir değişsin
+    setInterval(goster, 3000);
+  </script>
+</body>
+</html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Senin İçin 💖</title>
+</head>
+<body>
+  <h1>Bu site senin için 💕</h1>
+
+  <!-- Müzik -->
+  <audio id="mymusic" loop>
+    <source src="Samet Kardeşler x Sıla Şahin - Aldanırım.mp3.mp3" type="audio/mpeg">
+    Tarayıcın bu müziği desteklemiyor.
+  </audio>
+
+  <!-- Oynatma butonu -->
+  <button onclick="document.getElementById('mymusic').play()">🎶 Müziği Başlat</button>
+  <button onclick="document.getElementById('mymusic').pause()">⏸ Durdur</button>
+
+</body>
+</html>
