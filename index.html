@@ -161,3 +161,82 @@ kararlarıma saygı gösterdin sürekli bana destek olmaya çalışıyorsun ama 
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>İleri Sayaç</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    #counter {
+      font-size: 2em;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gün Sayacı</h1>
+  <p id="counter"></p>
+
+  <script>
+    // Başlangıç tarihini buraya yaz (yıl, ay-1, gün)
+    // Örn: 1 Ocak 2024 için new Date(2024, 0, 1)
+    const startDate = new Date(2025, 4, 3);
+
+    function updateCounter() {
+      const now = new Date();
+      const diffTime = now - startDate;
+      const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+      document.getElementById("counter").textContent =
+        startDate.toLocaleDateString("tr-TR") + " tarihinden bu yana " + diffDays + " gün geçti.";
+    }
+
+    updateCounter();
+    setInterval(updateCounter, 1000 * 60 * 60); // her saat güncelle
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Şifreli Sayfa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      scroll-behavior: smooth; /* yumuşak kaydırma */
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    section {
+      height: 100vh; /* ekran kadar boy */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    #page2 {
+      display: none; /* başlangıçta gizli */
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+
